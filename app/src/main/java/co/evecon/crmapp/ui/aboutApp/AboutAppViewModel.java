@@ -1,16 +1,21 @@
-package co.evecon.crmapp.ui.home;
+package co.evecon.crmapp.ui.aboutApp;
+
+import android.content.Context;
+import android.content.res.Resources;
 
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;
 import androidx.lifecycle.ViewModel;
 
-public class HomeViewModel extends ViewModel {
+import co.evecon.crmapp.R;
+
+public class AboutAppViewModel extends ViewModel {
 
     private MutableLiveData<String> mText;
 
-    public HomeViewModel() {
+
+    public AboutAppViewModel() {
         mText = new MutableLiveData<>();
-        mText.setValue("This is home fragment");
     }
 
     public LiveData<String> getText() {

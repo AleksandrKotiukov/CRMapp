@@ -3,31 +3,25 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/mobile_navigation"
-    app:startDestination="@+id/nav_home">
+    app:startDestination="@+id/nav_aboutApp">
 
     <fragment
-        android:id="@+id/nav_home"
-        android:name="co.evecon.crmapp.ui.home.HomeFragment"
-        android:label="@string/menu_home"
-        tools:layout="@layout/fragment_home" />
+        android:id="@+id/nav_aboutApp"
+        android:name="co.evecon.crmapp.ui.aboutApp.AboutAppFragment"
+        android:label="@string/menu_aboutApp"
+        tools:layout="@layout/fragment_aboutapp" />
 
     <fragment
-        android:id="@+id/nav_gallery"
-        android:name="co.evecon.crmapp.ui.gallery.GalleryFragment"
-        android:label="@string/menu_gallery"
-        tools:layout="@layout/fragment_gallery" />
+        android:id="@+id/nav_crm"
+        android:name="co.evecon.crmapp.ui.crm.CRMFragment"
+        android:label="@string/menu_crm"
+        tools:layout="@layout/fragment_crm" />
 
     <fragment
-        android:id="@+id/nav_slideshow"
-        android:name="co.evecon.crmapp.ui.slideshow.SlideshowFragment"
-        android:label="@string/menu_slideshow"
-        tools:layout="@layout/fragment_slideshow" />
-
-    <fragment
-        android:id="@+id/nav_tools"
-        android:name="co.evecon.crmapp.ui.tools.ToolsFragment"
-        android:label="@string/menu_tools"
-        tools:layout="@layout/fragment_tools" />
+        android:id="@+id/nav_info"
+        android:name="co.evecon.crmapp.ui.info.InfoFragment"
+        android:label="@string/menu_info"
+        tools:layout="@layout/fragment_info" />
 
     <fragment
         android:id="@+id/nav_share"

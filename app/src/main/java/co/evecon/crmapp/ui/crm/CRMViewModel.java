@@ -1,16 +1,16 @@
-package co.evecon.crmapp.ui.slideshow;
+package co.evecon.crmapp.ui.crm;
 
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;
 import androidx.lifecycle.ViewModel;
 
-public class SlideshowViewModel extends ViewModel {
+public class CRMViewModel extends ViewModel {
 
     private MutableLiveData<String> mText;
 
-    public SlideshowViewModel() {
+    public CRMViewModel() {
         mText = new MutableLiveData<>();
-        mText.setValue("This is slideshow fragment");
+        mText.setValue("This is CRM fragment");
     }
 
     public LiveData<String> getText() {

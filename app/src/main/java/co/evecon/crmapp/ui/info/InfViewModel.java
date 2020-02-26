@@ -1,16 +1,16 @@
-package co.evecon.crmapp.ui.gallery;
+package co.evecon.crmapp.ui.info;
 
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;
 import androidx.lifecycle.ViewModel;
 
-public class GalleryViewModel extends ViewModel {
+public class InfViewModel extends ViewModel {
 
     private MutableLiveData<String> mText;
 
-    public GalleryViewModel() {
+    public InfViewModel() {
         mText = new MutableLiveData<>();
-        mText.setValue("This is gallery fragment");
+        mText.setValue("This is information fragment");
     }
 
     public LiveData<String> getText() {

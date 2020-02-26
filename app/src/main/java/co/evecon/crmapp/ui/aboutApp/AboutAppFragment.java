@@ -1,4 +1,4 @@
-package co.evecon.crmapp.ui.home;
+package co.evecon.crmapp.ui.aboutApp;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -14,15 +14,15 @@ import androidx.lifecycle.ViewModelProviders;
 
 import co.evecon.crmapp.R;
 
-public class HomeFragment extends Fragment {
+public class AboutAppFragment extends Fragment {
 
-    private HomeViewModel homeViewModel;
+    private AboutAppViewModel homeViewModel;
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
         homeViewModel =
-                ViewModelProviders.of(this).get(HomeViewModel.class);
-        View root = inflater.inflate(R.layout.fragment_home, container, false);
+                ViewModelProviders.of(this).get(AboutAppViewModel.class);
+        View root = inflater.inflate(R.layout.fragment_aboutapp, container, false);
         final TextView textView = root.findViewById(R.id.text_home);
         homeViewModel.getText().observe(this, new Observer<String>() {
             @Override
