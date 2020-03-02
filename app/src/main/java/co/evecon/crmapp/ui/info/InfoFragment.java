@@ -1,5 +1,7 @@
 package co.evecon.crmapp.ui.info;
 
+import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -12,11 +14,15 @@ import androidx.fragment.app.Fragment;
 import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProviders;
 
+import com.google.android.material.snackbar.Snackbar;
+
 import co.evecon.crmapp.R;
 
 public class InfoFragment extends Fragment {
 
     private InfViewModel slideshowViewModel;
+    private TextView devSite;
+    private TextView tos;
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
@@ -30,6 +36,24 @@ public class InfoFragment extends Fragment {
                 textView.setText(s);
             }
         });
+
+        tos = root.findViewById(R.id.about_app_tos);
+        tos.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                Snackbar.make(v, "Replace with your own action", Snackbar.LENGTH_LONG)
+                        .setAction("Action", null).show();
+            }
+        });
+
+        devSite = root.findViewById(R.id.about_app_developer);
+        devSite.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                Intent i = new Intent(Intent.ACTION_VIEW);
+                i.setData(Uri.parse("http://evecon.co"));
+                startActivity(i);
+            }
+        });
+
         return root;
     }
 }

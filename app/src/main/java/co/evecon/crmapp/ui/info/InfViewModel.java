@@ -10,7 +10,6 @@ public class InfViewModel extends ViewModel {
 
     public InfViewModel() {
         mText = new MutableLiveData<>();
-        mText.setValue("This is information fragment");
     }
 
     public LiveData<String> getText() {

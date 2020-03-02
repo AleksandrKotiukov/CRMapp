@@ -14,4 +14,13 @@
     <string name="menu_send">Send</string>
 
     <string name="about_app_text">This is a mobile client for CRM. Simply displaying table with data from JSON server.</string>
+
+    <string name="info_info">Information</string>
+    <string name="about_app_name_label">NAME</string>
+    <string name="about_app_name">CRMApp</string>
+    <string name="about_app_version_name">Version</string>
+    <string name="about_app_version">1.0</string>
+    <string name="about_app_developer_name">Developer</string>
+    <string name="about_app_developer">Evecon Corp.</string>
+    <string name="about_app_tos">Terms of use</string>
 </resources>
